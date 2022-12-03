@@ -1,0 +1,40 @@
+.burger
+  position: relative
+  display: none
+  width: 21px
+  height: 14px
+  cursor: pointer
+  background-color: transparent
+  border: none
+  outline: none
+  &::before, &::after
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    background-color: $grayBlue
+    height: 2px
+    transition: transform .3s ease-out, top .3s ease-out
+  &::before
+    top: 0
+  &::after
+    top: calc(100% - 2px)
+    // width: 11px
+  &__line
+    position: absolute
+    left: 0
+    right: 0
+    top: 50%
+    transform: translateY(-50%) scale(1)
+    background-color: $grayBlue
+    height: 2px
+    transition: transform .3s ease-out
+  &_active &__line
+    transform: translateY(-50%) scale(0)
+  &_active
+    &::before
+      top: 50%
+      transform: rotate(-45deg)
+    &::after
+      top: 50%
+      transform: rotate(45deg)

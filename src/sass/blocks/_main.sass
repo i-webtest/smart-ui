@@ -1,0 +1,99 @@
+.main
+  position: relative
+  // background-image: url('../img/main/circle-4.svg'), url('../img/main/circle-3.svg'), url('../img/main/illustration.png')
+  // background-position: 100% 0%, 0% 0%
+  // background-size: 0, 0, 54px
+  background: url('../img/main/illustration.png') 85% 55%/25%, url('../img/main/circle-2.svg') 69% 37%, url('../img/main/circle-4.svg') 100% 0%, url('../img/main/circle-3.svg') 0% 0%,
+  // background: url('../img/main/circle-3.svg') 0% 0%
+  background-repeat: no-repeat
+  padding: 261px 0 54px
+  &__illustration
+    position: absolute
+    top: 78px
+    right: 185px
+  &__title
+    background-image: url('../img/main/circle-1.svg')
+    background-repeat: no-repeat
+    font-family: 'DM Sans'
+    font-weight: 700
+    font-size: 142px
+    line-height: 87.33%
+    letter-spacing: -0.025em
+    color: $grayBlue
+    margin-bottom: 21px
+    &-smart
+      text-transform: uppercase
+    &-point
+      color: $seaGreen
+  &__description
+    font-size: 24px
+    line-height: 125%
+    margin-bottom: 77px
+    color: $gray
+  &__wrapper
+    display: flex
+    align-items: center
+    margin-bottom: 100px
+  &__button
+    width: 218px
+    margin-right: 39px
+  &__list
+    display: flex
+    align-items: center
+    gap: 20px
+  &__item
+    transition: transform .3s
+    &:hover
+      transform: scale(1.1)
+  &__social
+    &-link
+      display: flex
+      align-items: center
+      & svg
+        margin-right: 8px
+        &:last-child
+          margin-right: 0
+    &-description
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: -0.04em
+      color: $gray
+.ellipse
+  border-radius: 50%
+  z-index: -2
+  &-1
+    position: absolute
+    top: 81px
+    background-color: #FFDC60
+    width: 93px
+    height: 93px
+  &-2
+    position: absolute
+    top: 95px
+    right: 581px
+    background-color: #FFDC60
+    width: 128px
+    height: 128px
+  &-3
+    position: absolute
+    left: -200px
+    top: -350px
+    background-color: #FFDC60
+    width: 400px
+    height: 400px
+  &-4
+    position: absolute
+    right: -450px
+    top: -162px
+    background-color: #5956E9
+    width: 900px
+    height: 900px
+.scroll
+  display: flex
+  align-items: center
+  color: $gray
+  & svg
+    margin-right: 16px
+.swipe
+  display: none
