@@ -1,23 +1,24 @@
-import Swiper from "swiper";
+import Swiper, { Navigation, Pagination } from "swiper";
+
+const swiperPagination = document.querySelector(".swiper-pagination");
 
 const swiper = new Swiper(".advantages__swiper", {
   direction: "horizontal",
-  loop: true,
+  loop: false,
+  spaceBetween: 20,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  modules: [Navigation, Pagination],
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    disabledClass: "advantages__swiper-button-next__disabled",
+    nextEl: ".advantages__swiper-button-next",
+    prevEl: ".advantages__swiper-button-prev",
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  pagination: {
+    el: ".swiper-pagination",
+    type: "custom",
   },
 });
 

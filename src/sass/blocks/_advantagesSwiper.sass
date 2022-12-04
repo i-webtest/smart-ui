@@ -1,0 +1,103 @@
+.advantages
+  &__swiper
+    width: 651px
+    margin-right: 0
+    margin-left: 0
+    &-slide
+      &__title
+        font-family: 'DM Sans'
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 140%
+        letter-spacing: -0.045em
+        color: #FFFFFF
+        margin-bottom: 23px
+    &-button
+      position: relative
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      background-color: $seaGreen
+      & svg
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+      &-prev
+        &__disabled
+          border: 1px solid #FFFFFF
+          opacity: 0.2
+      &-next
+        &__disabled
+          background-color: transparent
+          border: 1px solid #FFFFFF
+          opacity: 0.2
+  &__list
+    font-weight: 300
+    font-size: 21px
+    line-height: 32px
+    letter-spacing: -0.025em
+    color: #FFFFFF
+    opacity: 0.5
+    margin-bottom: 32px
+  &__link
+    display: flex
+    align-items: center
+    & span
+      display: block
+      background-color: #fff
+      width: 37px
+      height: 1px
+      margin-right: 17px
+    & a
+      position: relative
+      font-weight: 500
+      font-size: 19.7086px
+      line-height: 30px
+      letter-spacing: -0.04em
+      color: #FFFFFF
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        background-color: #fff
+        width: 100%
+        height: 1px
+  &__controll
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      width: 410px
+      margin: 0 auto
+
+.helper
+  position: relative
+  display: flex
+  justify-content: flex-end
+
+.button-wrapper
+  // position: absolute
+  display: flex
+  gap: 17px
+  width: max-content
+
+.swiper
+  &-pagination
+    display: flex
+    align-items: center
+    gap: 40px
+    color: #fff
+    font-family: 'DM Sans'
+    font-weight: 500
+    font-size: 16px
+    line-height: 99.33%
+    letter-spacing: -0.025em
+    height: min-content
+    margin-right: 75px
+    &-line
+      display: block
+      width: 45px
+      height: 1px
+      background-color: #fff

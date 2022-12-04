@@ -20,3 +20,19 @@
     margin-bottom: 55px
   &__button
     width: 216px
+  &__wrapper
+    position: relative
+    top: -145px
+    padding-top: 58px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      // border-top: 2px $seaGreen solid
+      background-color: $seaGreen
+      width: 660px
+      height: 2px
+      border-radius: 4px
+  &__line
+    position: relative

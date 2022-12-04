@@ -233,50 +233,93 @@
 
         <button class="button advantages__button">Ask a question</button>
 
-        <div class="line advantages__line"></div>
-
-        <div class="helper">
-          <div class="advantages__swiper swiper">
-            <!-- Additional required wrapper -->
-            <div class="advantages__swiper-wrapper swiper-wrapper">
-              <!-- Slides -->
-              <div class="advantages__swiper-slide swiper-slide">
-                <h3 class="advantages__swiper-slide__title">
-                  We have already strong skills and we are not stopping on achieved in following:
-                </h3>
-
-                <ul class="advantages__list">
-                  <li class="advantages__item">
-                    - Programming Languages: HTML5, CSS3, PHP, JavaScript (AngularJS, ReactJS NodeJS, jQuery)
-                  </li>
-                  <li class="advantages__item">- Content Management Systems (CMS): Wordpress, Opencart, Drupal</li>
-                  <li class="advantages__item">- Version Control System (VCS): SVN GIT GitLab GitHub Bitbucket</li>
-                  <li class="advantages__item">- Software as a Service (SAAS): Amazon Web Services, Rackspace Cloud</li>
-                  <li class="advantages__item">- Integration of different Application Programming Interface (API)</li>
-                </ul>
-              </div>
-
-              <div class="advantages__swiper-slide swiper-slide">
-                <h3 class="advantages__swiper-slide__title">We have a strong background in the areas below:</h3>
-
-                <ul class="advantages__list">
-                  <li class="advantages__item">- Website design and development;</li>
-                  <li class="advantages__item">- Website integration and maintenance;</li>
-                  <li class="advantages__item">- Customized e-commerce development;</li>
-                  <li class="advantages__item">- CMS development/integration.</li>
-                </ul>
-              </div>
-              ...
+        <div class="advantages__wrapper">
+          <div class="helper">
+            <div class="swiper-pagination">
+              <span class="swiper-pagination-current">01</span>
+              <span class="swiper-pagination-line"></span>
+              <span class="swiper-pagination-totlal">02</span>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
+            <div class="advantages__swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="advantages__swiper-wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="advantages__swiper-slide swiper-slide">
+                  <h3 class="advantages__swiper-slide__title">
+                    We have already strong skills and we are not stopping on achieved in following:
+                  </h3>
+
+                  <ul class="advantages__list">
+                    <li class="advantages__item">
+                      - Programming Languages: HTML5, CSS3, PHP, JavaScript (AngularJS, ReactJS NodeJS, jQuery)
+                    </li>
+                    <li class="advantages__item">- Content Management Systems (CMS): Wordpress, Opencart, Drupal</li>
+                    <li class="advantages__item">- Version Control System (VCS): SVN GIT GitLab GitHub Bitbucket</li>
+                    <li class="advantages__item">
+                      - Software as a Service (SAAS): Amazon Web Services, Rackspace Cloud
+                    </li>
+                    <li class="advantages__item">- Integration of different Application Programming Interface (API)</li>
+                  </ul>
+                </div>
+
+                <div class="advantages__swiper-slide swiper-slide">
+                  <h3 class="advantages__swiper-slide__title">We have a strong background in the areas below:</h3>
+
+                  <ul class="advantages__list">
+                    <li class="advantages__item">- Website design and development;</li>
+                    <li class="advantages__item">- Website integration and maintenance;</li>
+                    <li class="advantages__item">- Customized e-commerce development;</li>
+                    <li class="advantages__item">- CMS development/integration.</li>
+                  </ul>
+                </div>
+                ...
+              </div>
+            </div>
+          </div>
+          <div class="advantages__controll-wrapper">
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="button-wrapper">
+              <div class="advantages__swiper-button advantages__swiper-button-prev">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.5 8.5H0.5"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.5 3.5L0.5 8.5L5.5 13.5"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+              <div class="advantages__swiper-button advantages__swiper-button-next">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.5 8.5H15.5"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.5 3.5L15.5 8.5L10.5 13.5"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="advantages__link"><span></span><a href="#">Find out more</a></div>
           </div>
         </div>
       </div>
